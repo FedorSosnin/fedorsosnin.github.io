@@ -1,0 +1,13 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Catch 151</title>
+<script>
+// The game's old addresses (fedorsosnin.github.io/PokeKnomiGochi/...) moved to /Catch151/ when its repo was renamed
+// (2026-11-13): a browser that lands here goes on to the same page there, with its ? and # parts. Only the Knomi's
+// update files are real copies here (PokeKnomiGochi/update.json and firmware/), since firmware doesn't follow redirects.
+(function () {
+  var m = location.pathname.match(/^\/PokeKnomiGochi(\/.*)?$/i);
+  location.replace(m ? '/Catch151' + (m[1] || '/') + location.search + location.hash : 'https://github.com/FedorSosnin/Catch151');
+})();
+</script>
+<a href="https://github.com/FedorSosnin/Catch151">Catch 151</a>
